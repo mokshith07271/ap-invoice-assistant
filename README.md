@@ -9,41 +9,40 @@ An intelligent Accounts Payable (AP) invoice review assistant that performs auto
 
 ---
 
-## 🏗️ System Architecture
 
 
 
 🌐 1. Live Working Application
 👉 https://mokshith07271.github.io/ap-invoice-assistant/#/
 
+## 🏗️ System Architecture
 
-
-
- ┌─────────────────────────────────────────────────────────────────────────────────┐
- │                            CLIENT BROWSER (SPA)                                 │
- ├─────────────────────────────────────────────────────────────────────────────────┤
- │                                                                                 │
- │   ┌───────────────────────┐   Hash Routing    ┌─────────────────────────────┐   │
- │   │  UI Views Layer       │ ◄───────────────► │  SPA Router (router.js)     │   │
- │   │  • Dashboard View     │                   └──────────────┬──────────────┘   │
- │   │  • Upload Wizard      │                                  │                  │
- │   │  • Processing Stepper │                   State Updates  │                  │
- │   │  • Results & Approval │ ◄────────────────┘                  │                  │
- │   └───────────┬───────────┘                                                     │
- │               │                                                                 │
- │               ▼                                                                 │
- │   ┌───────────────────────┐    Pub/Sub Sync   ┌─────────────────────────────┐   │
- │   │ State Store (state.js)│ ◄───────────────► │ SessionStorage Persistence   │   │
- │   └───────────┬───────────┘                   └─────────────────────────────┘   │
- │               │                                                                 │
- │               ▼                                                                 │
- │   ┌─────────────────────────────────────────────────────────────────────────┐   │
- │   │                     DUAL AI INTELLIGENCE ENGINE                         │   │
- │   ├────────────────────────────────────┬────────────────────────────────────┤   │
- │   │  Fast-Path Fuzzy NLU Intent Engine │ Real-Time Gemini API Provider      │   │
- │   │  (Instant local query resolution)  │ (Word-by-word streaming typing)    │   │
- │   └────────────────────────────────────┴────────────────────────────────────┘   │
- └─────────────────────────────────────────────────────────────────────────────────┘
+```text
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│                            CLIENT BROWSER (SPA)                                 │
+├─────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                 │
+│   ┌───────────────────────┐   Hash Routing    ┌─────────────────────────────┐   │
+│   │  UI Views Layer       │ ◄───────────────► │  SPA Router (router.js)     │   │
+│   │  • Dashboard View     │                   └──────────────┬──────────────┘   │
+│   │  • Upload Wizard      │                                  │                  │
+│   │  • Processing Stepper │                   State Updates  │                  │
+│   │  • Results & Approval │ ◄────────────────────────────────┘                  │
+│   └───────────┬───────────┘                                                     │
+│               │                                                                 │
+│               ▼                                                                 │
+│   ┌───────────────────────┐    Pub/Sub Sync   ┌─────────────────────────────┐   │
+│   │ State Store (state.js)│ ◄───────────────► │ SessionStorage Persistence   │   │
+│   └───────────┬───────────┘                   └─────────────────────────────┘   │
+│               │                                                                 │
+│               ▼                                                                 │
+│   ┌─────────────────────────────────────────────────────────────────────────┐   │
+│   │                     DUAL AI INTELLIGENCE ENGINE                         │   │
+│   ├────────────────────────────────────┬────────────────────────────────────┤   │
+│   │ Fast-Path Fuzzy NLU Intent Engine │ Real-Time Gemini API Provider       │   │
+│   │ (Instant local query resolution)  │ (Word-by-word streaming typing)     │   │
+│   └────────────────────────────────────┴────────────────────────────────────┘   │
+└─────────────────────────────────────────────────────────────────────────────────┘
 
 
 
