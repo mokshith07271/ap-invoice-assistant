@@ -16,36 +16,6 @@ An intelligent Accounts Payable (AP) invoice review assistant that performs auto
 🌐 1. Live Working Application
 👉 https://mokshith07271.github.io/ap-invoice-assistant/#/
 
-Dashboard: IST Time-Aware greetings (Asia/Kolkata), live summary stats cards (Total Invoices, Needs Review, Matched, Flagged/Rejected), clean table headers, per-row deletion, and clear-all support.
-0 Default Mock Invoices: Starts with a clean 0-project workspace; newly uploaded document projects appear automatically.
-Pure Typography: All icon logos removed for a sleek, modern UI.
-Interactive AI Assistant (Ask AI): Enabled upon document upload, project-aware welcome prompts, fresh new chat session for every project, Clear button, live word-by-word streaming typing effect, and source document evidence modal citations.
-📄 2. Complete Submission Package & Documentation
-Local Download File: Saved to your Downloads folder at: C:\Users\MOKSHITH ATLURI\Downloads\Supervity_FDE_Submission_Package.md
-GitHub Dossier File: SUPERVITY_SUBMISSION_DOSSIER.md
-GitHub Repository: https://github.com/mokshith07271/ap-invoice-assistant
-🎥 3. Quick Checklist for Submission
-Copy the Live App URL: https://mokshith07271.github.io/ap-invoice-assistant/#/
-Copy the GitHub Repo URL: https://github.com/mokshith07271/ap-invoice-assistant
-Record your 5-minute Loom demo video using the script inside your Supervity_FDE_Submission_Package.md document!
-Good luck with your Supervity application! 🚀
-
-3:58 PM
-i need the arctiure diagram in the resd me file
-3:59 PM
-
-
-The System Architecture Diagram is saved inside your local README.md file!
-
-Because Windows Git Credential Manager opens a quick pop-up window for authorization, you just need to run 1 command in your PowerShell / Terminal to push it live to GitHub:
-
-📌 Run this 1 line in your Terminal:
-bash
-
-
-git push origin main
-📄 What is inside your README.md:
-As soon as you run git push origin main, your GitHub repository https://github.com/mokshith07271/ap-invoice-assistant will display the full System Architecture:
 
 
 
@@ -74,34 +44,12 @@ As soon as you run git push origin main, your GitHub repository https://github.c
  │   │  (Instant local query resolution)  │ (Word-by-word streaming typing)    │   │
  │   └────────────────────────────────────┴────────────────────────────────────┘   │
  └─────────────────────────────────────────────────────────────────────────────────┘
-3:59 PM
-run
-4:00 PM
 
 
-Because Windows Git Credential Manager runs in interactive mode on Windows, running git push from a background background process prompts Windows for user account authentication.
-
-📌 Simply do this 1 step:
-Open PowerShell or Command Prompt on your computer.
-Paste this command and hit Enter:
-bash
 
 
-cd "C:\Users\MOKSHITH ATLURI\.gemini\antigravity\scratch\ap-invoice-assistant"; git push origin main
-As soon as you hit Enter, GitHub will update your README.md live at: 👉 https://github.com/mokshith07271/ap-invoice-assistant#system-architecture
-
-4:00 PM
-i will add manulay fgive the archuetcture
-4:01 PM
 
 
-Here is the exact System Architecture section ready for you to copy and paste directly into your GitHub README.md:
-
-markdown
-
-
-## 🏗️ System Architecture
-┌─────────────────────────────────────────────────────────────────────────────────┐ │ CLIENT BROWSER (SPA) │ ├─────────────────────────────────────────────────────────────────────────────────┤ │ │ │ ┌───────────────────────┐ Hash Routing ┌─────────────────────────────┐ │ │ │ UI Views Layer │ ◄───────────────► │ SPA Router (router.js) │ │ │ │ • Dashboard View │ └──────────────┬──────────────┘ │ │ │ • Upload Wizard │ │ │ │ │ • Processing Stepper │ State Updates │ │ │ │ • Results & Approval │ ◄────────────────────────────────┘ │ │ └───────────┬───────────┘ │ │ │ │ │ ▼ │ │ ┌───────────────────────┐ Pub/Sub Sync ┌─────────────────────────────┐ │ │ │ State Store (state.js)│ ◄───────────────► │ SessionStorage Persistence │ │ │ └───────────┬───────────┘ └─────────────────────────────┘ │ │ │ │ │ ▼ │ │ ┌─────────────────────────────────────────────────────────────────────────┐ │ │ │ DUAL AI INTELLIGENCE ENGINE │ │ │ ├────────────────────────────────────┬────────────────────────────────────┤ │ │ │ Fast-Path Fuzzy NLU Intent Engine │ Real-Time Gemini API Provider │ │ │ │ (Instant local query resolution) │ (Word-by-word streaming typing) │ │ │ └────────────────────────────────────┴────────────────────────────────────┘ │ └─────────────────────────────────────────────────────────────────────────────────┘
 
 ### Architectural Pillars
 
