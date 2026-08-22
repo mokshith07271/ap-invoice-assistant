@@ -11,14 +11,7 @@ An intelligent Accounts Payable (AP) invoice review assistant that performs auto
 
 ## 🏗️ System Architecture
 
-Load older messages
-is it comoleted
-3:58 PM
 
-
-YES, 100% COMPLETED! 🎉
-
-Everything for your Supervity Forward Deployed Engineer assessment is fully built, tested, documented, and deployed:
 
 🌐 1. Live Working Application
 👉 https://mokshith07271.github.io/ap-invoice-assistant/#/
