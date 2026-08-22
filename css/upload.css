@@ -1,0 +1,93 @@
+.upload-zone {
+  border: 2px dashed var(--color-border);
+  border-radius: var(--radius-xl);
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-8);
+  transition: all var(--transition-normal);
+  background-color: var(--color-bg-card);
+  cursor: pointer;
+  text-align: center;
+}
+
+.upload-zone:hover {
+  border-color: var(--color-accent);
+  background-color: var(--color-bg-elevated);
+}
+
+.upload-zone.dragover {
+  border-color: var(--color-accent);
+  border-style: solid;
+  background-color: hsla(215, 90%, 60%, 0.1);
+  transform: scale(1.01);
+  animation: pulse 2s infinite;
+}
+
+.upload-zone-icon {
+  font-size: 48px;
+  margin-bottom: var(--space-4);
+  color: var(--color-text-muted);
+}
+
+.upload-zone-text {
+  font-size: var(--text-lg);
+  font-weight: 500;
+  margin-bottom: var(--space-2);
+}
+
+.upload-zone-formats {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
+.upload-file-preview {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-4);
+  background-color: var(--color-bg-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  margin-top: var(--space-4);
+}
+
+.upload-file-actions {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.upload-progress-bar {
+  height: 4px;
+  background-color: var(--color-bg-body);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  margin-top: var(--space-4);
+  width: 100%;
+}
+.upload-progress-bar::after {
+  content: "";
+  display: block;
+  height: 100%;
+  background-color: var(--color-accent);
+  width: 0%;
+  animation: progressFill 2s ease-out forwards;
+}
+
+.upload-step {
+  opacity: 0.5;
+  transition: opacity var(--transition-normal);
+}
+.upload-step.active, .upload-step.completed {
+  opacity: 1;
+}
+
+.upload-message {
+  display: flex;
+  gap: var(--space-4);
+  align-items: flex-start;
+  margin-bottom: var(--space-6);
+  animation: fadeInUp var(--transition-normal);
+}

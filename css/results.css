@@ -1,0 +1,127 @@
+.results-header {
+  font-size: var(--text-3xl);
+  font-weight: 600;
+  margin-bottom: var(--space-4);
+  animation: fadeInUp var(--transition-normal);
+}
+
+.results-summary-stats {
+  display: flex;
+  gap: var(--space-3);
+  margin-bottom: var(--space-8);
+  animation: fadeInUp var(--transition-normal) 0.1s backwards;
+}
+
+.matches-section, .exceptions-section {
+  margin-bottom: var(--space-10);
+}
+
+.matches-section h3, .exceptions-section h3 {
+  font-size: var(--text-xl);
+  margin-bottom: var(--space-4);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.match-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-2);
+  animation: slideInLeft var(--transition-normal) backwards;
+}
+.match-item i, .match-item svg {
+  color: var(--color-success);
+}
+
+.exception-card {
+  border-left: 4px solid var(--color-warning);
+  animation: scaleIn var(--transition-normal) backwards;
+}
+.exception-card.error {
+  border-left-color: var(--color-error);
+}
+.exception-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px hsla(38, 95%, 55%, 0.1);
+}
+.exception-card.error:hover {
+  box-shadow: 0 4px 12px hsla(0, 75%, 55%, 0.1);
+}
+
+.exception-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-4);
+}
+.exception-card-header h4 {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-lg);
+}
+
+.exception-card-body {
+  /* Body styles */
+}
+
+.exception-card-comparison {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+  background-color: var(--color-bg-elevated);
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-4);
+}
+.comparison-col label {
+  display: block;
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  margin-bottom: var(--space-1);
+}
+.comparison-col .value {
+  font-size: var(--text-base);
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+.comparison-col.mismatch .value {
+  color: var(--color-warning);
+}
+
+.exception-card-explanation {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-4);
+  padding-left: var(--space-3);
+  border-left: 2px solid var(--color-border);
+}
+
+.exception-card-actions {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.exception-card.expanded {
+  /* Extended details */
+}
+
+.no-exceptions {
+  text-align: center;
+  padding: var(--space-10) var(--space-4);
+  background-color: var(--color-bg-card);
+  border-radius: var(--radius-lg);
+  border: 1px dashed var(--color-success);
+}
+.no-exceptions-icon {
+  font-size: 48px;
+  margin-bottom: var(--space-4);
+  animation: bounceIn var(--transition-spring);
+}
