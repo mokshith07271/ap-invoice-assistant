@@ -3,16 +3,5 @@
   "version": "1.0.0",
   "description": "AI-Powered Accounts Payable Invoice Review Assistant",
   "main": "index.html",
-  "type": "module",
-  "scripts": {
-    "build": "echo 'Static build complete'",
-    "start": "node server.js"
-  },
-  "keywords": [
-    "accounts-payable",
-    "ai-assistant",
-    "invoice-matching"
-  ],
-  "author": "",
-  "license": "MIT"
+  "type": "module"
 }
