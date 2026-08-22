@@ -2,18 +2,16 @@
   "name": "ap-invoice-assistant",
   "version": "1.0.0",
   "description": "AI-Powered Accounts Payable Invoice Review Assistant",
-  "main": "server.js",
+  "main": "index.html",
   "type": "module",
   "scripts": {
-    "start": "node server.js",
-    "dev": "node server.js"
+    "build": "echo 'Static build complete'",
+    "start": "node server.js"
   },
   "keywords": [
     "accounts-payable",
     "ai-assistant",
-    "invoice-matching",
-    "firebase",
-    "gemini"
+    "invoice-matching"
   ],
   "author": "",
   "license": "MIT"
